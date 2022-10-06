@@ -44,15 +44,44 @@ def two(admin):
             print('id is incorrect')
             two(admin)
     if c==2:
-        print('gajab')
+        print('LOGGED IN SUCESSFULLY')
     else:
-        print('hatt')
+        print('LOGIN UNSUCESSFULL')
+    #ADMIN PERMISSIONS
+    print("ADMIN PERMS")
+    print('press 1 for accessing for staff details\n''press 2 for editing staff details\n''press 3 to be added later')
+    n=int(input("Enter the selected option"))
+    if n==1:
+        file=open("stflg.csv","r")
+        csvreader=csv.reader(file)
+        for row in csvreader:
+            print(row)
+    if n==2:
+        print('press 1 for adding staff details\n''press 2 for removing staff details')
+        l=int(input("Enter the selected option"))
+        if l==1:
+            print("under construction")
+            #Abhi bana nahi h vro
+            
+        if l==2:
+            f=open("stflg.csv","r")
+            csv_r=csv.reader(f)
+            name1=input("Enter the staffs name")
+            c=0
+            for row in csv_r:
+                if row[0]==name1:
+                    c=1
 
-    
+def three(staff):
+    print("nice")
+   
 def one(admin,staff):
     print('please select your login type')
     print('press 1 for admin\n''press 2 for staff')
     k=int(input('enter your choice'))
     if k==1:
         two(admin)
+    if k==2:
+        three(staff)
 one(admin,staff)
+
