@@ -47,6 +47,7 @@ def two(admin):
         print('gajab')
     else:
         print('hatt')
+
     
 def one(admin,staff):
     print('please select your login type')
