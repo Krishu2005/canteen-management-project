@@ -14,7 +14,7 @@ for i in sr:
 print(admin)
 print(staff)
 
-print("❤❤❤❤❤ WELCOME TO CANTEEN MANAGEMENT SYSTEM ❤❤❤❤❤")
+print("WELCOME TO CANTEEN MANAGEMENT SYSTEM")
 
 
 def viewhistory(admin,staff,k):
@@ -577,4 +577,3 @@ def one(admin,staff):
         print('invalid input')
         one(admin,staff)
 one(admin,staff)
-
